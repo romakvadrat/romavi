@@ -1,80 +1,103 @@
- @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Yanone+Kaffeesatz&display=swap');
 
 :root {
-    --main-color: black;
-    --secondary-color: blue;
-    background-color:beige;
-    font-family: 'Bebas Neue', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    scroll-behavior: smooth;
+  --main-color: black;
+  --secondary-color: blue;
+  background-color: beige;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    max-width: 980px;
-    margin: auto;
+  max-width: 980px;
+  margin: auto;
 }
 
-h1{
-    margin: 0;
-    padding: 0;
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+@media (max-width: 550px) {
+  header nav {
+    display: block;
+  }
 }
 
 header nav .logo {
-    font-family: 'Bebas Neue', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 150%;
-    vertical-align: middle;
-    text-align: center;
-    text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 150%;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 header nav .top-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 0;
-    margin: auto;
-    list-style-type: none;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 0;
+  margin: auto;
+  list-style-type: none;
+}
+
+@media (max-width: 550px) {
+  header nav .top-menu {
+    padding: 10px 0;
+  }
 }
 
 header nav .top-menu a {
-    text-decoration: none;
-    border: 2px solid transparent;
-    padding: 5px;
-}
-
-@media (min-width: 550px) {
-    header nav {
-        display: flex;
-    }
-
-    header nav .top-menu {
-        flex: 1;
-    }
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 2px;
 }
 
 header nav .top-menu a:hover {
-    border: 1px solid var(--main-color);
+  border: 1px solid var(--main-color);
 }
 
 header div {
-    background-image: url(../image/main-logo.jpg);
-    background-position: center;
-    background-size: cover;
-    min-height: 550px;
-    width: 100%;
+  background-image: url(../image/main-logo.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  width: 100%;
 }
 
 header .banner {
-    display: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: flex;
+  align-content: center;
 }
 
 header .banner .title {
-    font-size: 130%;
-    font-family: 'Bebas Neue', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-    text-transform: uppercase;
-    padding: 5em 0;
-    text-align: center;
+  font-size: 130%;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 3em 0;
+  margin-block-start: 0em;
+  margin-block-end: 3em; 
+  text-align: center;
+}
 
+header .banner .bottom-title {
+  font-size: 130%;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 3em 0;
+  margin-block-start: 10em;
+  margin-block-end: 3em; 
+  text-align: center;
+  justify-content: center;
+  
 }
