@@ -56,12 +56,6 @@ header nav .top-menu {
   list-style-type: none;
 }
 
-@media (max-width: 550px) {
-  header nav .top-menu {
-    padding: 10px 0; 
-  }
-}
-
 header nav .top-menu a {
   text-decoration: none;
   border: 1px solid transparent;
