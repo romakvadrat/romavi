@@ -83,7 +83,6 @@ header div {
 header .banner {
   justify-content: center;
   align-items: center;
-  flex-direction: flex;
   align-content: center;
 }
 
