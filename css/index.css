@@ -116,10 +116,15 @@ main .about {
     min-height: 500px;
 }
 
-main .about img {
-    display: flex;
-    min-height: 550px;
-  width: 100%;
+@media (max-width: 550px) {
+  main .about .imgme {
+    display: block;
+  }
+}
+main .about .imgme {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 main .about p {
