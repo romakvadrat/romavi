@@ -103,25 +103,61 @@ header .banner .bottom-title {
   
 }
 
-main .about h2 {
+main .about {
     margin: auto;
-    padding: 30px;
+    padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-main .about {   
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
+    align-content: center;
+    flex-direction: column;
 }
 
-@media (max-width: 550px) {
-  main .about .imgme {
-    display: block;
+@media (min-width: 550px) {
+  main .about {
+      display: grid;
+      grid-template-columns: 1fr 3fr 3fr;
+      column-gap: 20px;
+    row-gap: 2em;
   }
 }
-main .about .imgme {
+
+@media (min-width: 660px) {
+  main .about {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      column-gap: 20px;
+    row-gap: 2em;
+  }
+  
+}
+
+main .about .box1 {
+    font-size: 130%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 0 0;
+    margin-block-start: 3em;
+    margin-block-end: 3em; 
+    text-align: center;
+    justify-content: center;
+}
+main .about .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+main .about .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+/* main .about .imgme {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -131,5 +167,5 @@ main .about p {
   font-size: 90%;
   font-family: 'Oswald', sans-serif;
   text-align: center;
-}
+} */
 
