@@ -120,6 +120,9 @@ main .about {
       column-gap: 20px;
     row-gap: 2em;
   }
+  main .about .box1 {
+    writing-mode: horizontal-tb;
+       }
 }
 
 @media (min-width: 660px) {
@@ -130,6 +133,13 @@ main .about {
     row-gap: 2em;
   }
   
+}
+
+@media (min-width: 550px) and (max-width: 768px) {
+    main .about .box1 {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    }
 }
 
 main .about .box1 {
@@ -156,16 +166,4 @@ main .about .box3 {
     align-content: center;
     flex-direction: column;
 }
-
-/* main .about .imgme {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-main .about p {
-  font-size: 90%;
-  font-family: 'Oswald', sans-serif;
-  text-align: center;
-} */
 
