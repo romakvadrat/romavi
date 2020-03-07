@@ -120,9 +120,6 @@ main .about {
       column-gap: 20px;
     row-gap: 2em;
   }
-  main .about .box1 {
-    writing-mode: horizontal-tb;
-       }
 }
 
 @media (min-width: 660px) {
@@ -136,10 +133,11 @@ main .about {
 }
 
 @media (min-width: 550px) and (max-width: 768px) {
-    main .about .box1 {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    }
+        main .about .box1 {
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+
 }
 
 main .about .box1 {
@@ -165,5 +163,17 @@ main .about .box3 {
     align-items: center;
     align-content: center;
     flex-direction: column;
+}
+
+.galery-title {
+    display: flex;
+    font-size: 130%;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 3em 0;
+  margin-block-start: 0em;
+  margin-block-end: 3em; 
+  text-align: center;
+  justify-content: center;
 }
 
