@@ -177,3 +177,27 @@ main .about .box3 {
   justify-content: center;
 }
 
+main .galery-list .galery-card img {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 580px) {
+    main .galery-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    main .galery-list {
+        grid-template-columns: 1fr 1fr 1fr;  
+    }
+}
+
+@media (min-width: 980px) {
+    main .galery-list {
+        grid-template-columns: repeat(4, 1fr);  
+    }
+}
