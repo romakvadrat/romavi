@@ -1,106 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Yanone+Kaffeesatz&display=swap');
-
 :root {
-  --main-color: black;
-  --secondary-color: #9E8656;
-  background-color: #A1DAD3;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  scroll-behavior: smooth;
+    --main-color: black;
+    --secondary-color: #9E8656;
+    background-color: #A1DAD3;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-  max-width: 980px;
-  margin: auto;
+    max-width: 980px;
+    margin: auto;
 }
 
 h1 {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
 }
 
 @media (max-width: 550px) {
-  header nav {
-    display: block;
-  }
+    header nav {
+        display: block;
+    }
 }
 
 header nav .logo {
-  font-family: 'Oswald', sans-serif;
-  font-size: 150%;
-  vertical-align: middle;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: inherit;
+    font-family: 'Oswald', sans-serif;
+    font-size: 150%;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
 }
 
 header nav .top-menu {
-  color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  padding: 0;
-  margin: auto;
-  list-style-type: none;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 0;
+    margin: auto;
+    list-style-type: none;
 }
 
 header nav .top-menu a {
-  text-decoration: none;
-  border: 1px solid transparent;
-  padding: 2px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 2px;
 }
 
 header nav .top-menu a:hover {
-  border: 1px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 header div {
-  background-image: url(../image/main-logo.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 550px;
-  width: 100%;
+    background-image: url(../image/main-logo.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 550px;
+    width: 100%;
 }
 
 header .banner {
     padding: 30px 0;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 header .banner .title {
-  font-size: 130%;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  padding: 3em 0;
-  margin-block-start: 0em;
-  margin-block-end: 3em; 
-  text-align: center;
+    font-size: 130%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 3em 0;
+    margin-block-start: 0em;
+    margin-block-end: 3em;
+    text-align: center;
 }
 
 header .banner .bottom-title {
-  font-size: 130%;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  padding: 3em 0;
-  margin-block-start: 10em;
-  margin-block-end: 3em; 
-  text-align: center;
-  justify-content: center;
-  
+    font-size: 130%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 3em 0;
+    margin-block-start: 10em;
+    margin-block-end: 3em;
+    text-align: center;
+    justify-content: center;
 }
 
 main .about {
@@ -114,30 +112,28 @@ main .about {
 }
 
 @media (min-width: 550px) {
-  main .about {
-      display: grid;
-      grid-template-columns: 1fr 3fr 3fr;
-      column-gap: 20px;
-    row-gap: 2em;
-  }
+    main .about {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr;
+        column-gap: 20px;
+        row-gap: 2em;
+    }
 }
 
 @media (min-width: 660px) {
-  main .about {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); 
-      column-gap: 20px;
-    row-gap: 2em;
-  }
-  
+    main .about {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 2em;
+    }
 }
 
 @media (min-width: 550px) and (max-width: 768px) {
-        main .about .box1 {
-            writing-mode: vertical-lr;
-            text-orientation: upright;
-        }
-
+    main .about .box1 {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
 }
 
 main .about .box1 {
@@ -146,10 +142,11 @@ main .about .box1 {
     text-transform: uppercase;
     padding: 0 0;
     margin-block-start: 3em;
-    margin-block-end: 3em; 
+    margin-block-end: 3em;
     text-align: center;
     justify-content: center;
 }
+
 main .about .box2 {
     display: flex;
     justify-content: center;
@@ -157,6 +154,7 @@ main .about .box2 {
     align-content: center;
     flex-direction: column;
 }
+
 main .about .box3 {
     display: flex;
     justify-content: center;
@@ -168,13 +166,13 @@ main .about .box3 {
 .galery-title {
     display: flex;
     font-size: 130%;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  padding: 3em 0;
-  margin-block-start: 0em;
-  margin-block-end: 3em; 
-  text-align: center;
-  justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 3em 0;
+    margin-block-start: 0em;
+    margin-block-end: 3em;
+    text-align: center;
+    justify-content: center;
 }
 
 main .galery-list .galery-card img {
@@ -192,12 +190,12 @@ main .galery-list .galery-card img {
 
 @media (min-width: 660px) {
     main .galery-list {
-        grid-template-columns: 1fr 1fr 1fr;  
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 980px) {
     main .galery-list {
-        grid-template-columns: repeat(4, 1fr);  
+        grid-template-columns: repeat(3, 1fr);
     }
 }
